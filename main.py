@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import *
 from TemperatureConverter import *
+from currencyConverter import *
 
 # app window configuration and UI
 root = tk.Tk()
@@ -54,6 +55,20 @@ temp_widget = tk.Button(root,
                 command = TemperatureConverter
                 ).place(x=40,y=90)
 
-#ADD YOUR OWN WIDGETS HERE
+#NAIRA TO DOLLAR WIDGET
+temp_widget = tk.Button(root,
+                text="Naira to Dollar converter",
+                background='#ffffff',
+                foreground="#09A3BA",
+                font = ("Segoe UI", 14),
+                relief = tk.RAISED,
+                bd=3,
+                justify = tk.CENTER,
+                highlightbackground = "red",
+                overrelief = tk.GROOVE,
+                activebackground = "green",
+                activeforeground="blue",
+                command = Naira_to_dollar
+                ).place(x=40,y=180)
 
 root.mainloop()
